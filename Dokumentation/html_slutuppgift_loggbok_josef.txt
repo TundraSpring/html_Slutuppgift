@@ -1,0 +1,61 @@
+
+2024-01-12
+ * Skapade kanban tavla på trello:
+   * Skapade tre taggar: Mobil, Desktop, samt Josef
+   * Skapade desktop- samt mobil-versioner av user stories med Kim. La till Desktop respektive Mobil-taggarna till dessa. På dem jag skulle göra så satte jag taggen Josef.
+   * Skapade tre kolumner: Backlog, Currently working on, Done
+   * Jag antog att Kim och Gentian eventuellt skulle ansvara för att ge sina egna user stories bra namn, taggar och beskrivningar, men jag insåg långt senare (typ onsdag) att Gentian kanske inte förväntade sig att han skulle göra det
+ * Påbörjade att skapa grundstrukturen för Header och Navigations-menyn (jag kommer att behöva göra klart headerna innan jag kan göra klart denna del)
+
+Jag designade följande delar på index-sidan specifikt i Desktop före mobil. Detta är inte rekomomenderat, men jag tyckte det var enklare att göra det på det här sättet.
+Däremot så skrev jag mobil-versionen före desktop-versionen på Contact-sidan, för att jag hade blivit mer bekant med Mobil-läget då.
+
+2024-01-14
+ * Skapade topp och bott rutor i höger sida Header
+ * La in topp-texten i dessa två rutor.
+ * La in bott-texten i dessa två rutor.
+
+2024-01-15
+Vänster del av header:
+ * Skapade och la in bakgrundsbilden (det är en blå bild som har samma proportioner som vänstra delen av header)
+ * La in stora texten som är längst upp
+ * La in medeltexten som ligger mellan stora texten och knappen
+ * Skapade knappen (och gjorde den så att den ser ut som den gör i figma-filen)
+
+2024-01-16
+Skapade och gjorde klart Navigations-menyn:
+ * Skapade alla fyra knappar
+ * Gav dem rätt färg och proportioner
+ * Satte dem i mitten av sidan
+
+2024-01-17
+Skapade och delade ett kalkylark där vi håller koll på hur mycket som har gjorts och hur mycket som är kvar
+Bytte bakgrundsbilden i vänster del av headern från en som tar upp hela bakgrunden till en som bara innehåller familjen
+Gjorde så att Header (Vänster, höger-topp, höger-bott, samt nav-menyn) fungerar och ser ut som det ska i mobilt läge
+
+2024-01-18
+Höll presentation (Jag kände mig absolut inte redo att hålla presentationen, jag var inte i rätt "headspace" eller vad det kallas på svenska)
+Påbörjade samt gjorde klart mobil-versionen av Contact. Påbörjade Desktop-versionen (Gjorde Header och gick och sov efter jag blev klar med nav-menyn)
+Planerade med Kim att vi skulle mötas på Fredag cirka 16:00 - 18:00
+
+2024-01-19
+Gjorde klart Desktop-delen av Contact
+Skickade meddelande om vad som fanns kvar att göra i Index till Gentian och Kim, samt att jag kommer att ha Live Share öppet fram till potentiellt midnatt
+Försökte få Kim och Gentian och delta i Live-Share (Dem båda stack ått varsitt håll)
+Kim blev sur på mig för att jag höll på att ändra i koden i Index (Det var nödvändigt och jag modiferade bara min del, vad var hans problem?)
+Fixade så att knappen i Header inte försvann om sidan inte var bred nog
+Kollade fonter (Dem funkar)
+Bytte ut div'ar med mer semantiska alternativ
+Fixade så att länkar mellan index och Contact fungerar
+La till kommentarer
+Tog bort onödig kod från media queries
+Gjorde klart projektet (Allt som jag ansvarade över, iallafall)
+Under dagen så har jag inte varit i röstchatt med någon av dem andra två. Gentian kom inte när det var planerat och Kim var närvarande i 5 min
+
+
+
+
+
+
+
+

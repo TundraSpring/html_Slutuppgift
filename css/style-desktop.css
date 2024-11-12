@@ -1,0 +1,670 @@
+/* TO DO
+  Is the back to top button part of the footer?
+
+*/
+
+/* Kommentaren ovan skriven av Kim */
+
+/*JOSEF 
+  Denna kommentaren skriven av josef. Om en kommentar är skrivan av
+  mig så är den markerad med "JOSEF". Jag skrev och ansvarar för
+  Header och Nav-menyn på sidan. Annan kod på sidan (som inte är central
+  till hela sidan, så som .container) ansvarar inte jag för, för det
+  var inte jag som skrev
+  den, och jag har gått både Kim och Gentian möjlighet att ändra i denna
+  filen, men båda valde att skicka in sina egna versioner istället
+  för att vi alla skickar in samma.
+
+  Desktop blev huvudversionen för det tog mindre tid och
+  var tillåtet
+
+  Kommentarer som markerar början och slut på Header är också skrivna av mig.
+
+  Vissa av mina kommentarer är på svenska, andra på engelska för att jag
+  är så van med båda språk
+*/
+
+
+h1, h2, h3, h4 {
+  font-family: 'Frank Ruhl Libre', Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+}
+
+/*
+.container {
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr; 
+  /* grid-template-rows: 1fr 100px 1fr 1fr 1fr; */
+  /* grid-template-rows: 800px 85px 1fr 1fr 1fr 500px; */
+  /* grid-template-rows: 885px 0px 1fr 1fr 1fr 500px;
+  gap: 0px 0px;
+  width: 100%; 
+  grid-template-areas: 
+    "main-top" /* strukturen har ändrats */
+    /* "Menu"
+    "mid-top"
+    "mid-bot"
+    "bot"
+    "Footer"; 
+} */
+
+/* ---- Body tag för att lägga container i en flexbox */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #ebebeb;
+}
+/*---------- slut --------------------- */
+
+.container {
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr; 
+  /* grid-template-rows: 1fr 100px 1fr 1fr 1fr; */
+  /* grid-template-rows: 800px 85px 1fr 1fr 1fr 500px; */
+  grid-template-rows: 900px 1fr 1fr 1fr 500px;
+  gap: 0px 0px;
+  width: 85%;  /* 100% för att ta bort gråa kanter */
+  grid-template-areas: 
+    "main-top" /* strukturen har ändrats */
+    "mid-top"
+    "mid-bot"
+    "bot"
+    "Footer"; 
+}
+
+
+#background-F17949 {
+  background-color: #F17949; 
+}
+
+#background-FAB131 {
+  background-color: #FAB131; 
+}
+
+#background-C7DDEA {
+  background-color: #C7DDEA;
+}
+
+#background-A9A19E {
+  background-color: #A9A19E;
+}
+
+#foreground-783c24 {
+  color: #783c24;
+}
+
+#foreground-7d5818 {
+  color: #7d5818;
+}
+
+#foreground-50585e {
+  color: #50585e;
+}
+
+
+
+/*--------------------------Header (Josef)----------------------------*/
+
+  .header-wrapper {
+    width: 100%;
+    height: 100%;
+    gap: 0px 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 800px 100px;
+    grid-template-areas:
+      "le   ri" /* left, right and nav*/
+      "na   na"
+  }
+  
+  .header-left { 
+    background-color: #C7DDEA;
+    width: 100%;
+    height: 100%;
+    background-size:contain;
+    background-image: url('/images/family.png');
+    background-repeat: no-repeat;
+    background-size: 25vmax 25vmax; /* (JOSEF) Used to make button not go off-screen when width becomes low */
+    background-position: bottom right;
+    grid-area: le;
+  }
+  
+  .header-left>h4 { 
+    font-size: 4vw; /* (JOSEF) Used to make button not go off-screen when width becomes low */
+    font-weight: bold;
+    font-stretch: expanded;
+    width: 59%;
+    margin-left: 18%;
+    line-height: 100%;
+  }
+
+  
+  .header-left>p {
+    font-size: 1.5vw; /* (JOSEF) Used to make button not go off-screen when width becomes low */
+    font-weight: bold;
+    width: 55%;
+    line-height: 180%;
+    margin-left: 18%;
+    margin-top: -9%;
+  }
+
+  .header-left>p>strong {
+    color: white;
+  }
+
+  .header-left>button {
+    width: 28%;
+    margin-left: 18%;
+    margin-top: 9%;
+    height: 7%;
+    font-size: 80%;
+    font-weight: bold;
+    border-color: white;
+    border-style: hidden;
+    border-radius: 25em;
+    box-shadow: 0pc 0.3em 0pc 0pc rgba(0, 0, 0, 0.1)
+    
+  }
+  
+  .header-right {
+
+    width: 100%;
+    height: 100%;
+    grid-area: ri;
+  }
+
+  .header-right-sub {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+
+    display: flex; /* (JOSEF) Needed for text inside div to display correctly */
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-right-sub-content {
+    line-height: 50%;
+  }
+
+  .header-right-sub-content>p {
+    font-size: 100%;
+    font-weight: bold;
+  }
+
+  .header-right-sub-content>h1 {
+    font-size: 300%;
+    color: white;
+  }
+
+
+  .nav-meny {
+    background-color: #ebebeb;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav-meny>a {
+    color: #8d8d8d;
+    height: 100%;
+    width: 16%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 410%;
+    font-size: 150%;
+  }
+
+
+  .nav-meny>a:first-child {
+    margin-left: 18%;
+  }
+  
+  .nav-meny>a:hover {
+    background-color: #dedede;
+    color: black;
+  }
+
+
+/*-----------------------Slut på Header------------------------------*/
+
+
+
+
+
+
+
+
+  
+
+  
+
+    
+  .mid-top {
+    display: grid;
+    grid-template-areas: 
+      "mid-top-left mid-top-right"
+      "object-container object-container";
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px;
+    grid-area: mid-top;
+    height: auto;
+    background-color: #A9A19E;
+ }
+ 
+
+  /* .mid-top {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "mid-top-left mid-top-right";     
+    grid-area: mid-top;
+    height: auto;
+    background-color: #A9A19E; 
+  } */
+  .mid-top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: mid-top-right;
+    
+   }
+  .mid-top-right p {
+    line-height: 1.5;
+    position: relative;
+    top: -90px;
+ width: 300px;
+  }
+  
+  
+  .mid-top-left { grid-area: mid-top-left;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mid-top-left h1 {
+    font-size: 60px;
+    color: white;
+    width: 400px;
+    position: relative;
+    top: -50px;
+  }
+  .mid-top-left button {
+    
+    width: 28%;
+    
+    height: 7%;
+    font-size: 80%;
+    font-weight: bold;
+    border-color: white;
+    border-radius: 30%;
+    border-style: hidden;
+    border-radius: 25em;
+    box-shadow: 0pc 0.3em 0pc 0pc rgba(0, 0, 0, 0.1);
+   position: relative;
+   left: -70px;
+   top: -70px;
+  }
+  .mid-bot {
+    display: grid;
+    place-items: center;
+    grid-area: mid-bot;
+    background-color: #FAB131;
+    height: 800px;
+   }
+   .text-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+ }
+   
+   .text-container h1 {
+    color: white;
+    
+   }
+
+   .object-container {
+    grid-area: object-container;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    grid-template-areas: "left mid right";
+    justify-content: center;
+    justify-self: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+ }
+ /*---- Working ---- */
+  /* .object-container {
+    display: grid;
+ grid-template-rows: 1fr;
+ grid-template-columns: 1fr 1fr 1fr;
+ position: relative;
+ grid-template-areas: "left mid right";
+ justify-content: center;
+ justify-self: center;
+ padding-left: 50px;
+ padding-right: 50px;
+ width: 100%;
+ height: auto;
+ top: -2600px;
+ box-sizing: border-box;
+  } */
+
+  /* --- working - static --- */
+/* .object {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: white;
+  width: 520px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+} */
+/* --- working - shrinking ---*/
+.object {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px; 
+  margin: none; 
+  background-color: white;
+  width: calc(100% - 50px); 
+  height: 400px; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  flex-shrink: 1; 
+ }
+ /*---- working - static - moved ---- */ 
+ /* .object {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px; 
+  margin: none; 
+  background-color: white;
+  width: 400px;
+  height: 400px; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  flex-shrink: 1; 
+ } */
+
+.object p {
+  margin: 10px;
+  width: calc(100% - 50px);
+  color: #A9A19E;
+  text-align: center;
+  
+}
+
+.object h2 {
+  padding: 0px;
+  margin: 0px;
+}
+.object1{
+  grid-area: left;
+}
+.object2{
+  grid-area: mid;
+}
+.object3{
+  grid-area: right;
+}
+
+  /* .wrapper {
+  position: relative;
+  top: -25px;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  
+  } */
+  .wrapper {
+    position: relative;
+    top: -25px;
+    width: calc(100% - 15px); /* Subtract the desired space from the total available width */
+    height: 300px; /* Subtract the desired space from the total available height */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+   }
+  .wrapperc1 {
+ 
+  background-color: #C7DDEA;
+  
+  }
+  .wrapperc2 {
+  
+  background-color: #FAB131;
+  
+  }
+  .wrapperc3 {
+ 
+  background-color: #F17949; 
+  
+  }
+
+
+.img1 {
+  
+  
+  
+   object-position: center top;
+   width: 229px;
+   height: 349px;
+}
+.img2 {
+  
+  
+  
+   object-position: center top;
+   width: 160px; /* 328px org */
+   height: 650px;
+}
+.img3 {
+  
+  
+  
+   object-position: center top;
+   width: 350px; /*496px */
+   height: 800px;
+}
+
+  /* .mid-top {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-area: mid-top; 
+  }
+  .mid-top-right { grid-area: 1 / 2 / 2 / 3; z-index: 1;}
+  .mid-top-left { grid-area: 1 / 1 / 2 / 2; z-index: 1;}
+  .mid-bot-left { grid-area: 2 / 1 / 3 / 2; }
+  .mid-bot-right { grid-area: 2 / 2 / 3 / 3; }
+  .mid-all { grid-area: 1 / 1 / 3 / 3; }
+  .mid-bot { grid-area: 2 / 1 / 3 / 3;
+    background-color: #FAB131;
+  }
+  .mid-top-back { grid-area: 1 / 1 / 2 / 3; 
+  background-color: #A9A19E;
+  }
+
+  .objects-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: green;
+    z-index: 1;
+   }
+
+   .object {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+   }
+
+  .object h2{
+    color: black;
+  }
+  .object p {
+    color: black;
+  } */
+
+
+  
+.bot {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "bot-How bot-1 bot-2"
+  "bot-3 bot-4 bot-5";
+  grid-area: bot;
+} 
+
+.bot > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 40px;   */
+  height: 400px;
+  text-align: center;
+}
+
+.bot > div h2  {
+  align-self: flex-start;
+  padding-left: 20px;
+  color: hsl(200, 1%, 55%);
+  
+
+}
+
+.bot >div h1{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: 'Frank Ruhl Libre', Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  letter-spacing: -0.03em
+
+}
+
+.bot > div p {
+  max-width: 262px;
+  height: 200px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+  
+  
+  /* font-size: 16px; */
+}
+
+  .bot-How { grid-area: bot-How;
+    background-color: #C7DDEA;
+  
+    
+  } 
+
+  .bot-1 { grid-area: bot-1;
+    background-color: white;  
+   
+  }
+  
+  .bot-2 { grid-area: bot-2;
+    background-color: #ebebeb;
+  }
+  
+  .bot-3 { grid-area: bot-3;
+    background-color: white;
+  }
+  
+  .bot-5 { grid-area: bot-5;
+    background-color: white;
+  }
+  
+  .bot-4 { grid-area: bot-4; 
+    background-color: #F17949;
+  }
+
+  .Footer {
+    grid-area: Footer;
+    background-color: gray;
+  }
+
+  .Footer a {
+    background-color: darkgrey;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+
+  }
+
+  /* .Menu {
+
+   }
+   
+  .Menu { grid-area: Menu; } */
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  

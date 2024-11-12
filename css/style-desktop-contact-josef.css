@@ -1,0 +1,97 @@
+@media screen and (min-width: 641px) {
+
+    body {
+        aspect-ratio: 1493.6 / 2500.42;
+        grid-template-rows: 522.75px 99.56px 809.03px 1082.08px;
+    }                   /* 1        2       3        4          5 */
+
+    .header-class {
+        aspect-ratio: 1 / 0.35;
+        background-size: 22.5% 90%;
+        background-position: 85% bottom;
+      }
+
+      .header-class>h1 {
+        font-size: 425%;
+        margin-left: 35%;
+        margin-top: 15%;
+      }
+
+      .nav-meny {
+        aspect-ratio: 6 / 0.4;
+      }
+      
+      .nav-meny>a {
+        height: 100%;
+        width: 16%;
+        line-height: 410%;
+      }
+
+      .nav-meny>a:first-child {
+        margin-left: 18%;
+      }
+
+
+      .whats-on-your-mind {
+        aspect-ratio: 6 / 3.25;
+      }
+
+      .whats-on-your-mind>h1, .come-visit-us>h1 {
+        margin-left: 7.5%;
+        margin-top: 10%;
+        width: 40%;
+      }
+
+      .whats-on-your-mind>h2 {
+        margin-left: 50%;
+        width: 20%;
+      }
+
+      .whats-on-your-mind>input {
+        margin-left: 50%;
+        width: 35.2%;
+        padding-left: 0.5%;
+        margin-bottom: 1.5%;
+      }
+      
+      .whats-on-your-mind>textarea {
+        margin-left: 50%;
+        width: 35.2%;
+        padding-left: 0.5%;
+        padding-top: 0.5%;
+      }
+
+      .whats-on-your-mind>button {
+        width: 14%;
+        margin-top: 3%;
+        margin-left: 72%;
+      }
+
+      #your-email {
+        margin-top: -13%;
+      }
+
+      .footer-map {
+        grid-area:  4 / 1; /* Detta är annorlunda från Mobile. Det funkar och jag vågar inte ändra det*/
+        aspect-ratio: 911 / 660;
+        background-image: url('/images/map_desktop.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: #777574;
+      }
+
+      .come-visit-us {
+        width: 35%;
+        height: 30%; /* Här använde jag vanliga Height, för att Aspect Ratio här förstörde utseendet på sidan */
+        margin-top: 3.5%;
+      }
+      
+      .come-visit-us>p {
+        margin-left: 7.5%;
+        margin-top: -1%;
+      }
+
+      .come-visit-us>h1 {
+        width: 80%; 
+      }
+}

@@ -1,0 +1,135 @@
+
+  body {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 800 / 2666,65;
+    display: grid;
+    grid-template-rows: 640px 214px 822px 192px 192px 608px;
+  }                 /* 1     2     3     4     5     6     7 */
+  
+  .header-class {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* I många ställen i Contact-filerna så använder jag detta för att sätta höjd */
+    background-color: #C7DDEA;
+    background-image: url('/images/man-baby.png');
+    background-repeat: no-repeat;
+    background-size: 64% 92%;
+    background-position: bottom right;
+    vertical-align: top;
+    display: inline-block;
+  }
+  
+  .header-class>h1 {
+    font-size: 525%;
+    margin-left: 5%;
+    width: 50%;
+    margin-top: 30%;
+  }
+  
+  .nav-meny {
+    grid-area: 2 / 1;
+    background-color: white;
+    width: 100%;
+    aspect-ratio: 6 / 2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav-meny>a {
+    color: #8d8d8d;
+    height: 50%;
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 450%;
+    font-size: 150%;
+  }
+  
+  .nav-meny>a:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .whats-on-your-mind {
+    grid-area:  3 / 1;
+    background-color: #a9a19e;
+    width: 100%;
+    aspect-ratio: 6 / 9.5; /* Det finns inget helt standardiserat sätt jag använder aspect ratio. Numren varierar i storlek */
+  }
+  
+  .whats-on-your-mind>h1, .come-visit-us>h1 {
+    color: white;
+    font-size: 420%;
+    margin-left: 10%;
+    vertical-align: top;
+    display: inline-block;
+    line-height: 100%;
+    margin-bottom: 5%; 
+  }
+  
+  .whats-on-your-mind>h2 {
+    color: #e5e3e2;
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%; 
+  }
+  
+  .whats-on-your-mind>input {
+    margin-left: 7.5%;
+    width: 81.5%;
+    aspect-ratio: 14 / 1.5;
+    padding-left: 2.5%;
+    font-size: 145%;
+  }
+  
+  .whats-on-your-mind>textarea {
+    margin-left: 7.5%;
+    width: 81.5%;
+    padding-left: 2.5%;
+    padding-top: 3%;
+    font-size: 145%;
+  }
+  
+  .whats-on-your-mind>button {
+    width: 32%;
+    margin-top: 7%;
+    height: 6.5%;
+    font-size: 80%;
+    font-weight: bold;
+    border-color: white;
+    background-color: white;
+    border-style: hidden;
+    border-radius: 25em;
+    box-shadow: 0pc 0.3em 0pc 0pc rgba(0, 0, 0, 0.1);
+    margin-left: 60%;
+  }
+  
+  .footer-map {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    z-index: 1;
+    background-color: darkgray;
+    width: 100%;
+    aspect-ratio: 6 / 7.5;
+    background-image: url('/images/map_phone.png');
+    background-size: cover;
+  }
+  
+  .come-visit-us {
+    grid-area:  4 / 1;
+    z-index: 3;
+    margin-left: 10%;
+    background-color: #fab131;
+    width: 80%;
+    aspect-ratio: 6 / 4.5;
+  }
+  
+  .come-visit-us>p {
+    color: white;
+    margin-left: 10%;
+    font-size: 150%;
+    margin-top: 1.5%;
+  }
